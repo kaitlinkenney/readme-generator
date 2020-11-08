@@ -3,6 +3,9 @@ const inquirer = require('inquirer');
 const markdown = require('./utils/generateMarkdown.js');
 // array of questions for user
 const init = async () => {
+    const licenses = ['[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)',
+    '[![License: MPL 2.0](https://img.shields.io/badge/License-MPL%202.0-brightgreen.svg)](https://opensource.org/licenses/MPL-2.0)',
+    '[![License: Zlib](https://img.shields.io/badge/License-Zlib-lightgrey.svg)](https://opensource.org/licenses/Zlib)'];
 
     try {
       const answers = await inquirer.prompt([
@@ -44,10 +47,18 @@ const init = async () => {
         // {
         //     type: 'input',
         //     name: 'email',
-        //     message: 'Please enter your email',
+        //     message: 'Please enter your email:',
         // },
+        {
+            type: 'list',
+            message: 'Which license is the application covered under?',
+            name: 'license',
+            choices: [...licenses],
+        },
       ]);
+
   
+
       const readMeData = `
       # Title:\n \t ${answers.title}
       ## Table of Contents:\n \t
@@ -59,6 +70,7 @@ const init = async () => {
       ## Contributing:\n \t ${answers.contributing}
       ## Tests:\n \t ${answers.tests}
       ## Questions:\n \t 1. GitHub username: ${answers.gitHub}\n \t 2. Email: ${answers.email}
+      ## License:\n \t ${answers.license}
       `
 
       fs.writeFileSync ('README.md', readMeData);
