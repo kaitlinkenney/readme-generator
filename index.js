@@ -1,5 +1,7 @@
 const fs = require('fs');
-var inquirer = require('inquirer');
+const inquirer = require('inquirer');
+const generateMarkdown = require('./utils/generateMarkdown.js');
+const markdown = require('./utils/generateMarkdown.js');
 // array of questions for user
 const init = async () => {
 
@@ -20,47 +22,49 @@ const init = async () => {
             name: 'installation',
             message: 'What are the installation instructions?',
         },
-        {
-            type: 'input',
-            name: 'usage',
-            message: 'What is the usage information?',
-        },
-        {
-            type: 'input',
-            name: 'contributing',
-            message: 'What are the contribution guidelines?',
-        },
-        {
-            type: 'input',
-            name: 'tests',
-            message: 'What are the test instructions?',
-        },
-        {
-            type: 'input',
-            name: 'gitHub',
-            message: 'What is your GitHub username?',
-        },
-        {
-            type: 'input',
-            name: 'email',
-            message: 'Please enter your email',
-        },
+        // {
+        //     type: 'input',
+        //     name: 'usage',
+        //     message: 'What is the usage information?',
+        // },
+        // {
+        //     type: 'input',
+        //     name: 'contributing',
+        //     message: 'What are the contribution guidelines?',
+        // },
+        // {
+        //     type: 'input',
+        //     name: 'tests',
+        //     message: 'What are the test instructions?',
+        // },
+        // {
+        //     type: 'input',
+        //     name: 'gitHub',
+        //     message: 'What is your GitHub username?',
+        // },
+        // {
+        //     type: 'input',
+        //     name: 'email',
+        //     message: 'Please enter your email',
+        // },
       ]);
   
       const readMeData = `
-      #Title: ${answers.title}
-      #Description: ${answers.description}
-      #Installation: ${answers.installation}
-      #Usage: ${answers.usage}
-      #Contributing: ${answers.contributing}
-      #Tests: ${answers.tests}
-      #Questions:\n "1. GitHub username: "${answers.gitHub}\n
-      "2. Email: "${answers.email}
+      # Title:\n \t ${answers.title}
+      ## Table of Contents:\n \t
+      [Description](## Description)\n \t
+      [Installation](## Installation)\n \t
+      ## Description:\n \t ${answers.description}
+      ## Installation:\n \t ${answers.installation}
+      ## Usage:\n \t ${answers.usage}
+      ## Contributing:\n \t ${answers.contributing}
+      ## Tests:\n \t ${answers.tests}
+      ## Questions:\n \t 1. GitHub username: ${answers.gitHub}\n \t 2. Email: ${answers.email}
       `
 
-      fs.writeFileSync ('ReadMeSample', readMeData);
+      fs.writeFileSync ('README.md', readMeData);
   
-      console.log('Successfully wrote to index.html');
+      console.log('Successfully wrote to readme');
     } catch (err) {
       console.log(err);
     }
@@ -68,23 +72,5 @@ const init = async () => {
   
   init();
   
-// function to write README file
-// function writeToFile(fileName, data) {
-    //will take the data and input it into fileName.
-// }
 
-// function to initialize program
-// function init() {
-//     inquirer.prompt(questions).then((answers) => {
-      
-    
-// }
-
-// function sum(firstNum, secondNum) {
-//     var z = firstNum + secondNum;
-//     console.log(z);
-// }
-// sum(3, 4);
-
-// function call to initialize program
 
