@@ -1,6 +1,5 @@
 const fs = require('fs');
 const inquirer = require('inquirer');
-const generateMarkdown = require('./utils/generateMarkdown.js');
 const markdown = require('./utils/generateMarkdown.js');
 // array of questions for user
 const init = async () => {
@@ -52,8 +51,8 @@ const init = async () => {
       const readMeData = `
       # Title:\n \t ${answers.title}
       ## Table of Contents:\n \t
-      [Description](## Description)\n \t
-      [Installation](## Installation)\n \t
+      [Description](#Description)\n \t
+      [Installation](#Installation)\n \t
       ## Description:\n \t ${answers.description}
       ## Installation:\n \t ${answers.installation}
       ## Usage:\n \t ${answers.usage}
