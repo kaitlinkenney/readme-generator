@@ -1,6 +1,6 @@
-[![License: MPL 2.0](https://img.shields.io/badge/License-MPL%202.0-brightgreen.svg)](https://opensource.org/licenses/MPL-2.0)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 # Title:
-  dsajf
+  sdf
 ## Table of Contents:
  
 [Description](#description)
@@ -18,17 +18,17 @@
 [License](#license)
  
 ## Description:
- adsf
-## Installation:
  asdf
+## Installation:
+ adsf
 ## Usage:
- df
-## Contributing:
  sdf
+## Contributing:
+ asdf
 ## Tests:
- 
+ sd
 ## Questions:
- 1. GitHub username: kaitlinkenney at (github.com/undefined) 
- 	 2. Email: kaitlin
+ 1. GitHub username: kaitlinkenney at github.com/kaitlinkenney 
+ 	 2. Email: sdf
 ## License:
- The application is covered under this license: [![License: MPL 2.0](https://img.shields.io/badge/License-MPL%202.0-brightgreen.svg)](https://opensource.org/licenses/MPL-2.0)
+ The application is covered under this license: [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
