@@ -1,6 +1,6 @@
 const fs = require('fs');
 const inquirer = require('inquirer');
-const markdown = require('./utils/generateMarkdown.js');
+// const markdown = require('./utils/generateMarkdown.js');
 // array of questions for user
 const init = async () => {
     const licenses = ['[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)',
@@ -24,31 +24,31 @@ const init = async () => {
             name: 'installation',
             message: 'What are the installation instructions?',
         },
-        // {
-        //     type: 'input',
-        //     name: 'usage',
-        //     message: 'What is the usage information?',
-        // },
-        // {
-        //     type: 'input',
-        //     name: 'contributing',
-        //     message: 'What are the contribution guidelines?',
-        // },
-        // {
-        //     type: 'input',
-        //     name: 'tests',
-        //     message: 'What are the test instructions?',
-        // },
-        // {
-        //     type: 'input',
-        //     name: 'gitHub',
-        //     message: 'What is your GitHub username?',
-        // },
-        // {
-        //     type: 'input',
-        //     name: 'email',
-        //     message: 'Please enter your email:',
-        // },
+        {
+            type: 'input',
+            name: 'usage',
+            message: 'What is the usage information?',
+        },
+        {
+            type: 'input',
+            name: 'contributing',
+            message: 'What are the contribution guidelines?',
+        },
+        {
+            type: 'input',
+            name: 'tests',
+            message: 'What are the test instructions?',
+        },
+        {
+            type: 'input',
+            name: 'gitHub',
+            message: 'What is your GitHub username?',
+        },
+        {
+            type: 'input',
+            name: 'email',
+            message: 'Please enter your email:',
+        },
         {
             type: 'list',
             message: 'Which license is the application covered under?',
@@ -57,21 +57,25 @@ const init = async () => {
         },
       ]);
 
-  
-
-      const readMeData = `
-      # Title:\n \t ${answers.title}
-      ## Table of Contents:\n \t
-      [Description](#Description)\n \t
-      [Installation](#Installation)\n \t
-      ## Description:\n \t ${answers.description}
-      ## Installation:\n \t ${answers.installation}
-      ## Usage:\n \t ${answers.usage}
-      ## Contributing:\n \t ${answers.contributing}
-      ## Tests:\n \t ${answers.tests}
-      ## Questions:\n \t 1. GitHub username: ${answers.gitHub}\n \t 2. Email: ${answers.email}
-      ## License:\n \t ${answers.license}
-      `
+      const readMeData = 
+`${answers.license}
+# Title:\n  ${answers.title}
+## Table of Contents:\n 
+[Description](#description)\n 
+[Installation](#installation)\n 
+[Usage](#usage)\n 
+[Contributing](#contributing)\n
+[Tests](#tests)\n 
+[Questions](#questions)\n 
+[License](#license)\n 
+## Description:\n  ${answers.description}
+## Installation:\n ${answers.installation}
+## Usage:\n ${answers.usage}
+## Contributing:\n ${answers.contributing}
+## Tests:\n ${answers.tests}
+## Questions:\n 1. GitHub username: ${answers.gitHub}\n \t 2. Email: ${answers.email}
+## License:\n ${answers.license}
+`
 
       fs.writeFileSync ('README.md', readMeData);
   
