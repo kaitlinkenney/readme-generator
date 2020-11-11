@@ -1,6 +1,6 @@
 const fs = require('fs');
 const inquirer = require('inquirer');
-// const markdown = require('./utils/generateMarkdown.js');
+
 // array of questions for user
 const init = async () => {
     const licenses = ['[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)',
@@ -68,15 +68,14 @@ const init = async () => {
 [Tests](#tests)\n 
 [Questions](#questions)\n 
 [License](#license)\n 
-## Description:\n  ${answers.description}
+## Description:\n ${answers.description}
 ## Installation:\n ${answers.installation}
 ## Usage:\n ${answers.usage}
 ## Contributing:\n ${answers.contributing}
 ## Tests:\n ${answers.tests}
-## Questions:\n 1. GitHub username: ${answers.gitHub}\n \t 2. Email: ${answers.email}
-## License:\n ${answers.license}
+## Questions:\n 1. GitHub username: ${answers.gitHub} \n \t 2. Email: ${answers.email}
+## License:\n The application is covered under this license: ${answers.license}
 `
-
       fs.writeFileSync ('README.md', readMeData);
   
       console.log('Successfully wrote to readme');

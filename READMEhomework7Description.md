@@ -98,12 +98,12 @@ This homework is graded based on the following criteria:
 
 ## Review
 
-You are required to submit the following for review:
+* Walkthrough video demonstrating the functionality of the application:
 
-* A walkthrough video demonstrating the functionality of the application.
+* Screenshot of application: <img width="952" alt="Screenshot generated readme" src="https://user-images.githubusercontent.com/67657449/98849317-074dec00-2421-11eb-8578-d8ab184ce24f.png">
 
-* A sample README.md file for a project repository generated using your application
+* Includes a sample README.md file for a project repository generated using your application.
 
-* The URL of the GitHub repository, with a unique name and a README describing the project
+* URL of the GitHub repository, with a unique name and a README describing the project: https://github.com/kaitlinkenney/readme-generator
 
 ---
