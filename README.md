@@ -1,4 +1,4 @@
-[![License: Zlib](https://img.shields.io/badge/License-Zlib-lightgrey.svg)](https://opensource.org/licenses/Zlib)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 # Title:
   Homework 7
 ## Table of Contents:
@@ -20,15 +20,15 @@
 ## Description:
  It generates a readme file.
 ## Installation:
- You must install the inquirer package.
+ Install the inquirer package.
 ## Usage:
- The user answers prompts in the terminal to create their own readme.
+ Answer the questions to generate a readme file.
 ## Contributing:
  None.
 ## Tests:
- Answer the prompts.
+ Answer the questions.
 ## Questions:
  1. GitHub username: kaitlinkenney at github.com/kaitlinkenney 
- 	 2. Email: kaitlin@email.com
+ 	 2. Please contact me with additional questions at this email: kaitlin@email.com
 ## License:
- The application is covered under this license: [![License: Zlib](https://img.shields.io/badge/License-Zlib-lightgrey.svg)](https://opensource.org/licenses/Zlib)
+ The application is covered under this license: [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)

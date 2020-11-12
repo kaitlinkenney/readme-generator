@@ -98,7 +98,7 @@ This homework is graded based on the following criteria:
 
 ## Review
 
-* Walkthrough video demonstrating the functionality of the application:
+* Walkthrough video demonstrating the functionality of the application: https://drive.google.com/file/d/1wXSH1TbslxfnLE4rdUgmXhyvkcPGctiz/view
 
 * Screenshot of application: <img width="952" alt="Screenshot generated readme" src="https://user-images.githubusercontent.com/67657449/98849317-074dec00-2421-11eb-8578-d8ab184ce24f.png">
 
