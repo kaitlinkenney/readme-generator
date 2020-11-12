@@ -73,7 +73,7 @@ const init = async () => {
 ## Usage:\n ${answers.usage}
 ## Contributing:\n ${answers.contributing}
 ## Tests:\n ${answers.tests}
-## Questions:\n 1. GitHub username: ${answers.gitHub} at github.com/${answers.gitHub} \n \t 2. Email: ${answers.email}
+## Questions:\n 1. GitHub username: ${answers.gitHub} at github.com/${answers.gitHub} \n \t 2. Please contact me with additional questions at this email: ${answers.email}
 ## License:\n The application is covered under this license: ${answers.license}
 `
       fs.writeFileSync ('README.md', readMeData);

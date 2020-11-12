@@ -1,6 +1,6 @@
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![License: Zlib](https://img.shields.io/badge/License-Zlib-lightgrey.svg)](https://opensource.org/licenses/Zlib)
 # Title:
-  sdf
+  Homework 7
 ## Table of Contents:
  
 [Description](#description)
@@ -18,17 +18,17 @@
 [License](#license)
  
 ## Description:
- asdf
+ It generates a readme file.
 ## Installation:
- adsf
+ You must install the inquirer package.
 ## Usage:
- sdf
+ The user answers prompts in the terminal to create their own readme.
 ## Contributing:
- asdf
+ None.
 ## Tests:
- sd
+ Answer the prompts.
 ## Questions:
  1. GitHub username: kaitlinkenney at github.com/kaitlinkenney 
- 	 2. Email: sdf
+ 	 2. Email: kaitlin@email.com
 ## License:
- The application is covered under this license: [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+ The application is covered under this license: [![License: Zlib](https://img.shields.io/badge/License-Zlib-lightgrey.svg)](https://opensource.org/licenses/Zlib)
